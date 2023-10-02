@@ -1,4 +1,4 @@
 # Syoseki
-Template for Waapuro `Syoseki`
+Default template for Waapuro `Syoseki`
 
 ![screenshot.png](screenshot.png)
