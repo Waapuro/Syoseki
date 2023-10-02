@@ -1,0 +1,10 @@
+{% extends "templates/base.html" %}
+{% load global_tags %}
+{% load publish_tags %}
+
+{% block title %}ホーム{% endblock %}
+{% block content %}
+  <div class="articles">
+    {% articles_list p=1 per_page=15 %} <!-- 使用自定义标签 -->
+  </div>
+{% endblock %}

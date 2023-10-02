@@ -1,0 +1,148 @@
+a {
+  color: #724e2b;
+  transition: opacity 300ms;
+  text-decoration: underline dotted;
+}
+a:hover {
+  opacity: 0.8;
+}
+body {
+  margin: 0;
+}
+header {
+  margin-left: 2em;
+  margin-right: 4em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 1em 0;
+    margin-right: 0;
+  }
+}
+header .myHeaderBg {
+  min-width: 400px;
+  padding: 1em;
+  margin-left: 2em;
+  transition: all 500ms;
+}
+header .myHeaderBg:hover {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.74);
+}
+@media (max-width: 768px) {
+  header .myHeaderBg {
+    min-width: 0;
+  }
+  header .myHeaderBg:hover {
+    box-shadow: none;
+  }
+}
+header .title {
+  background: #ffffff;
+  padding: 1em 1.5em;
+  margin: 3em 2em;
+  box-sizing: border-box;
+  border: 0.2em solid #131313;
+  box-shadow: 0 0 0 0.4em #ffffff, 0 0 0 0.65em #131313;
+}
+header .title-main {
+  color: #131313;
+  font-weight: bold;
+  margin-left: 1em;
+}
+header .title-main a {
+  text-decoration: none;
+}
+header .title-sub {
+  color: #444444;
+}
+header .navbar {
+  writing-mode: horizontal-tb;
+  border-left: 1px solid #696969;
+  border-right: 1px solid #696969;
+  min-height: 100%;
+  margin: 0 1em;
+}
+header .navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 1em;
+}
+header .navbar ul .nav-title {
+  font-weight: bolder;
+}
+header .navbar ul .nav-title::before,
+header .navbar ul .nav-title::after {
+  content: "-";
+  top: 0;
+  opacity: 0.3;
+}
+header .navbar ul .nav-title::before {
+  left: -16px;
+}
+header .navbar ul .nav-title::after {
+  right: -16px;
+}
+header .navbar ul li {
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+header .navbar ul li a {
+  color: #724e2b;
+}
+header .navbar ul li:nth-child(n+2) {
+  border-top: 1px dotted #ffffff;
+  padding-top: 0.5em;
+}
+footer {
+  margin-right: 2em;
+  padding: 0 1em;
+  border-right: 1px solid #696969;
+}
+footer .article p {
+  font-size: 0.8em;
+}
+.container {
+  padding: 10vh 1em;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 5vh 1em;
+  }
+}
+.article-header {
+  margin: 0 1em;
+}
+.article-footer {
+  margin: 0 1em;
+}
+.article p {
+  margin-block-start: 0;
+  margin-block-end: 0.25em;
+  text-align: justify;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .article p {
+    font-size: 1.2rem;
+  }
+}
+.article p::before {
+  content: "\2002";
+  display: inline;
+  /* 保持在行内 */
+}
+.article .align-left {
+  text-align: left;
+}
+.article .align-center {
+  text-align: center;
+}
+.article .align-right {
+  text-align: right;
+}
+.article .align-justify {
+  text-align: justify;
+}
+/*# sourceMappingURL=style.css.map */

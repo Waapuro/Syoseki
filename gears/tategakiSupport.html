@@ -1,0 +1,20 @@
+<style>
+    body {
+        writing-mode: vertical-rl;
+        overflow-x: auto;
+        overflow-y: hidden;
+        box-sizing: border-box;
+    }
+</style>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		window.addEventListener("wheel", function (event) {
+			const scrollDistance = 100;
+			if (event.deltaY > 0) {
+				window.scrollBy(-scrollDistance, 0);
+			} else {
+				window.scrollBy(scrollDistance, 0);
+			}
+		});
+	});
+</script>

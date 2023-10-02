@@ -1,0 +1,26 @@
+{% load global_tags %}
+<meta name="description" content="Your website description.">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:image" content="{{ img }}">
+<meta property="og:url" content="{{ url }}">
+<meta property="og:type" content="{{ type }}"> {# website article music.song book profile product place #}
+
+<meta name="twitter:card" content="summary"> {# summary summary_large_image #}
+<meta name="twitter:site" content="{{ author }}">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ img }}">
+<script type="application/ld+json">
+{
+  "@context": "{{ url }}",
+  "@type": "{{ type }}",
+  "headline": "{{ title }}",
+  "datePublished": "{{ date }}",
+  "author": {
+    "name": "{{ author }}"
+  },
+  "image": "{{ img }}",
+  "description": "{{ description }}"
+}
+</script>

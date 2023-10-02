@@ -1,0 +1,22 @@
+{% load global_tags %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+  <meta charset="{{ CHARSET }}">
+  <meta name="viewport"
+        content="height=device-height, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>{% block title %}Title{% endblock %} - {{ SITE_TITLE }}</title>
+  {% include 'gears/social.html' with title='' description='' img='' url='' type='' author='' date='' %}
+  {% include 'gears/imports.html' %}
+</head>
+<body>
+{% include 'gears/tategakiSupport.html' %}
+<div class="container">
+  {% include 'templates/header.html' %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% include 'templates/footer.html' %}
+</div>
+</body>
+</html>

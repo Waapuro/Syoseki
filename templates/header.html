@@ -1,0 +1,58 @@
+{% load global_tags %}
+<style>
+    .myHeaderBg {
+        background-image: url("{% front 'image/default-bg.jpg' %}");
+        background-repeat: repeat;
+        background-size: 300px;
+    }
+</style>
+<header>
+  <div class="myHeaderBg">
+    <div class="title">
+      <h1 class="title-main">
+        <a href="/">
+          {% if SITE_TITLE_YOMI == '' %}
+            {{ SITE_TITLE }}
+          {% else %}
+            <ruby>
+              {{ SITE_TITLE }}
+              <rt>{{ SITE_TITLE_YOMI }}</rt>
+            </ruby>
+          {% endif %}
+        </a>
+      </h1>
+      <div class="title-sub">
+        {% if SITE_SUBTITLE_YOMI == '' %}
+          {{ SITE_SUBTITLE }}
+        {% else %}
+          <ruby>
+            {{ SITE_SUBTITLE }}
+            <rt>{{ SITE_SUBTITLE_YOMI }}</rt>
+          </ruby>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="navbar">
+    <ul>
+      <li class="nav-title">
+        ナビ
+      </li>
+      <li>
+        <a href="/">ホーム</a>
+      </li>
+      <li>
+        <a href="/">検索</a>
+      </li>
+      <li>
+        <a href="/">目次</a>
+      </li>
+      <li>
+        <a href="/">お問合せ</a>
+      </li>
+      <li>
+        <a href="http://waapuro.org/">Waapuro</a>
+      </li>
+    </ul>
+  </div>
+</header>

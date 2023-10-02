@@ -1,0 +1,27 @@
+{% extends "templates/base.html" %}
+{% load global_tags %}
+{% load publish_tags %}
+
+{% block title %}{{ article.title }}{% endblock %}
+{% block content %}
+  <div class="article-header article">
+    <h1>
+      {{ article.title }}
+    </h1>
+    <p class="align-right">
+      {% if article.author.last_name or article.author.first_name %}
+        {{ article.author.last_name }} {{ article.author.first_name }}
+      {% else %}
+        {{ article.author }}
+      {% endif %}
+    </p>
+  </div>
+  <div class="article">
+    {{ content|safe }}
+  </div>
+  <div class="article-footer article">
+    <p class="align-right">
+      {{ article.publish_date }}
+    </p>
+  </div>
+{% endblock %}

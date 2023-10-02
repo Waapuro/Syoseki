@@ -1,0 +1,21 @@
+{
+  "NAME": "syoseki",
+  "TEMP_INFO": {
+    "TEMP_NAME": "書籍",
+    "VERSION": "R5.8",
+    "DESCRIPTION": "本を開いて、世界が読まれる。",
+    "AUTHOR": "waapuro.org",
+    "AUTHOR_SITE": "https://waapuro.org",
+    "TEMPLATE_SITE": "https://waapuro.org"
+  },
+  "BACKEND": "django.template.backends.django.DjangoTemplates",
+  "APP_DIRS": true,
+  "OPTIONS": {
+    "context_processors": [
+      "django.template.context_processors.debug",
+      "django.template.context_processors.request",
+      "django.contrib.auth.context_processors.auth",
+      "django.contrib.messages.context_processors.messages"
+    ]
+  }
+}
